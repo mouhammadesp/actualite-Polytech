@@ -1,0 +1,151 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #002244;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content img {
+    height: 60px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header h1 span {
+    font-size: 2.2em;
+    color: #ffcc00;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #005bb5;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #004494;
+    color: #ffcc00;
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #005bb5;
+    border-radius: 5px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    padding: 10px 15px;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Article Grid Styling */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Article Box Styling */
+.article-box {
+    background-color: #f0f0f0;
+    border: 2px solid #004494;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 4px solid #002244;
+    margin-top: 20px;
+}
+/* Styles pour le logo */
+.logo {
+    width: 150px; /* Ajustez la largeur selon votre besoin */
+    height: auto; /* Ajustez la hauteur automatiquement en fonction de la largeur */
+    border-radius: 50%; /* Pour rendre le logo arrondi */
+    margin-right: 20px; /* Espacement à droite du logo */
+    border: 2px solid #fff; /* Bordure blanche autour du logo */
+}
